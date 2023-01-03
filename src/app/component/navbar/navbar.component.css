@@ -1,0 +1,33 @@
+p{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: x-small;
+    padding-top: 8%;
+}
+
+
+.blink{
+    padding-top: 5px;
+}
+  
+span{
+    font-size: 12px;
+    font-family: sans-serif;
+    color: white;
+    animation: blink 1s linear infinite;
+    font-weight: bolder;
+    
+    
+    
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+.dropdown-menu{
+
+    background-color: rgb(0, 0, 0);
+
+}

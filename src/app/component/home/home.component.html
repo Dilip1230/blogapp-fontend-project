@@ -1,0 +1,37 @@
+
+<div id="home">
+<div class="container">
+<div class="p-5 text-center bg-image rounded-3" style="
+    background-image: url('https://cdn2.outdoorphotographer.com/2019/12/Capture_The_Character_05.jpg');
+    height: 300px; background-size: cover; ">
+    
+ 
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="mb-3">Welcome To Wild-life Blog</h1>
+        <h4 class="mb-3">No wildlife – No human life.</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<div class="container">
+
+    <div class="row">    
+      <div class="card" style="width: 20rem; height: 20rem; " *ngFor="let post of posts">
+        <img class="card-img-top" src="data:image/png;base64,{{post.postImage}} " alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{post.postTitle}}</h5>
+          <p>{{post.postContent | slice : 0 :40 }}</p>
+
+          <a href="/post/{{post.postId}}" class="btn btn-primary">Read More</a>
+      
+        </div>
+      </div>
+     
+    </div>
+    </div>
+  </div>
+    <br/>
